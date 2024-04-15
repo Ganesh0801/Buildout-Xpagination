@@ -16,13 +16,14 @@ const Pagination = () => {
       //console.log(response.data)
      setData(response.data)
     }catch(e){
+      alert("failed to fetch data")
       console.log("error while fetching" ,e)
     }
    
   }
  
   useEffect(()=>{
-    
+
      fetchAPi()
   },[])
 
