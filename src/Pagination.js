@@ -13,11 +13,11 @@ const Pagination = () => {
   const fetchAPi = async()=>{
     try{
       const response = await axios.get(`https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json`)
-      //console.log(response.data)
+      console.log(response.data)
      setData(response.data)
     }catch(e){
-      alert("failed to fetch data")
-      console.log("error while fetching" ,e)
+      //alert("failed to fetch data")
+      console.log(alert("failed to fetch data"));
     }
    
   }
@@ -46,7 +46,7 @@ const Pagination = () => {
 
         <tbody className='body'> 
             {currentRecords.map((val)=>(
-                   <tr className='detail'>
+                   <tr className='detail' key={val.id}>
                     <td>{val.id}</td>
                     <td>{val.name}</td>
                     <td>{val.email}</td>
