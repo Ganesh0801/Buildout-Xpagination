@@ -1,0 +1,30 @@
+.BtnCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    background-color: rgb(54, 148, 110);
+    border-radius: 6px;
+    margin: 10px;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight:500;
+  }
+  
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 30px;
+    border-radius: 8px;
+    background-color: rgb(54, 148, 110);
+      color: white;
+      font-weight: 500;
+  }
