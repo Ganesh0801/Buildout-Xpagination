@@ -7,8 +7,8 @@ const Pagination = () => {
   const [data,setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalCurr] = useState(10);
-  const lastRecord = currentPage * totalCurr;//10
-  const firstRecord = lastRecord - totalCurr;//0
+  const lastRecord = currentPage * totalCurr;
+  const firstRecord = lastRecord - totalCurr;
 
   const fetchAPi = async()=>{
     try{
@@ -16,8 +16,8 @@ const Pagination = () => {
       console.log(response.data)
      setData(response.data)
     }catch(e){
-      //alert("failed to fetch data")
-      console.log(alert("failed to fetch data"));
+      window.alert("failed to fetch data")
+      console.log(alert("failed to fetch data"),e);
     }
    
   }

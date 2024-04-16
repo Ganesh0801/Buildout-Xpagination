@@ -5,7 +5,8 @@
 .container{
     margin: 70px auto;
     width: 90%;
-    height: 80vh;
+    /* height: 80vh; */
+   
 
     background-color: rgba(128, 128, 128, 0.119);
    
@@ -28,7 +29,7 @@ h1{
     outline: none;
 }
 .header{
-  width:100vh;
+  width:100%;
 }
 .row{
     width: 100%;
